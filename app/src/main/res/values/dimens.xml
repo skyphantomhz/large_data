@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_padding">8dp</dimen>
+    <dimen name="common_margin">8dp</dimen>
+    <dimen name="common_text_size_x">40sp</dimen>
+</resources>

@@ -75,7 +75,8 @@ dependencies {
     implementation deps.lifecycle.runtime
     annotationProcessor deps.lifecycle.compiler
     implementation deps.room.runtime
-    annotationProcessor deps.room.compiler
+    kapt deps.room.compiler
+    implementation deps.paging_ktx
 
     // Android Testing Support Library's runner and rules
     androidTestImplementation deps.atsl.core
