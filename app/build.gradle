@@ -50,6 +50,12 @@ android {
         targetCompatibility 1.8
         sourceCompatibility 1.8
     }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
 }
 
 dependencies {
@@ -79,7 +85,7 @@ dependencies {
     implementation deps.paging_ktx
 
     // Android Testing Support Library's runner and rules
-    androidTestImplementation deps.atsl.core
+    testImplementation  deps.atsl.core
     androidTestImplementation deps.atsl.ext_junit
     androidTestImplementation deps.atsl.runner
     androidTestImplementation deps.atsl.rules
@@ -95,4 +101,10 @@ dependencies {
     androidTestImplementation deps.annotations
     androidTestImplementation deps.app_compat
     androidTestImplementation deps.material
+
+    testImplementation deps.junit
+    testImplementation deps.mockito.core
+    testImplementation deps.arch_core.testing
+    testImplementation deps.robolectric
+    androidTestImplementation deps.arch_core.testing
 }

@@ -13,7 +13,7 @@ abstract class AppDatabase : RoomDatabase() {
 
     companion object{
         fun getAppDataBase(context: Context) = Room.databaseBuilder(context.applicationContext, AppDatabase::class.java, "ExampleDB")
-            .fallbackToDestructiveMigration()
+            .createFromAsset("databases/utopia_cities.db")
             .build()
     }
 }
