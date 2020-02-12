@@ -26,5 +26,5 @@ object LiveDataTestUtil {
     }
 
 
-    const val TIMEOUT = 3000L
+    const val TIMEOUT = 2000L
 }

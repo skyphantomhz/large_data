@@ -5,13 +5,12 @@ import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import com.example.largedata.data.source.local.entity.City
-import com.example.largedata.databinding.ItemRecordBinding
-
+import com.example.largedata.databinding.ItemCityBinding
 
 class CityAdapter : PagedListAdapter<City, CityViewHolder>(DIFF_CALLBACK) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CityViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        val itemBinding = ItemRecordBinding.inflate(layoutInflater, parent, false)
+        val itemBinding = ItemCityBinding.inflate(layoutInflater, parent, false)
         return CityViewHolder(itemBinding)
     }
 

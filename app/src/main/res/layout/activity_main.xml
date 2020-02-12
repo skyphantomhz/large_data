@@ -16,7 +16,6 @@
             android:id="@+id/rvCity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:itemCount="10"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"

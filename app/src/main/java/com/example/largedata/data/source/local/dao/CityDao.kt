@@ -13,5 +13,5 @@ interface CityDAO {
     fun getCities(): DataSource.Factory<Int, City>
 
     @Query("SELECT count(id) FROM cities")
-    fun countCities(): LiveData<Int>
+    fun countCities(): LiveData<Long>
 }

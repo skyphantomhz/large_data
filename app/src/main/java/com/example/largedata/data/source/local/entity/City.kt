@@ -14,7 +14,7 @@ data class City(
     val country: String? = null,
     @ColumnInfo(name = "city")
     @Nullable
-    val city: String? = null,
+    val name: String? = null,
     @ColumnInfo(name = "population")
     @Nullable
     val population: Long? = null

@@ -19,10 +19,10 @@ class MainActivity : BaseActivity() {
             this, R.layout.activity_main
         )
         viewModel = getViewModel(MainViewModel::class)
-        initView()
+        initCitiesView()
     }
 
-    private fun initView() {
+    private fun initCitiesView() {
         adapter = CityAdapter()
         viewModel.cities.observe(this, Observer { cities ->
             adapter.submitList(cities)

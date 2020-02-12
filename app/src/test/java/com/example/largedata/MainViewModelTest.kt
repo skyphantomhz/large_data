@@ -43,8 +43,12 @@ class MainViewModelTest {
 
     @Test
     @Throws(Exception::class)
-    fun getCities() {
+    fun totalCityTest() {
         val allCity = LiveDataTestUtil.getValue(cityDAO.countCities())
-        assertEquals(272128, allCity)
+        assertEquals(TOTAL_CITY_EXPECT, allCity)
+    }
+
+    companion object {
+        const val TOTAL_CITY_EXPECT = 272128L
     }
 }
